@@ -37,8 +37,8 @@ while not window_should_close():
 
     # Display images.
     # draw_texture(spaceship_texture, 0, 0, WHITE)
-    draw_texture_v(new_texture, Vector2(200, 0), WHITE)
-    draw_texture_v(new_texture2, Vector2(0, 500), WHITE)
+    draw_texture_v(new_texture, Vector2(0, 0), WHITE)
+    draw_texture_v(new_texture2, Vector2(800, 600), WHITE)
 
     end_drawing()
 
