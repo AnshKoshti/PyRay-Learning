@@ -1,0 +1,20 @@
+# Virtual environment folder
+.venv/
+venv/
+env/
+
+# Python bytecode (compiled files)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Windows Python executables
+*.exe
+
+# Linux/Unix Python binaries and shared libraries (when inside venv or root)
+bin/python
+bin/python3
+bin/python*
+lib/
+include/
+Scripts/
