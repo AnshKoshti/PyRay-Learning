@@ -1,11 +1,12 @@
 from pyray import *
 from raylib import *
+from os.path import join
 
 # Start the window.
 init_window(1536, 864, "Basics")
 
 # importing things for game.
-spaceship_texture = load_texture("assets/spaceship.png")
+spaceship_texture = load_texture(join("assets", "spaceship.png"))
 
 # Starting point of the code.
 while not window_should_close():
