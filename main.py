@@ -5,7 +5,7 @@ from os.path import join
 # Start the window.
 # Allow the window to change size
 SetConfigFlags(FLAG_WINDOW_RESIZABLE)
-init_window(800, 600, "Basics")
+init_window(1920, 1080, "Basics")
 
 # importing things for game.
 # spaceship_texture = load_texture(join("assets", "spaceship.png"))
