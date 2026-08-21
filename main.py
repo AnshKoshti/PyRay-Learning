@@ -4,8 +4,8 @@ from os.path import join
 
 # Start the window.
 # Allow the window to change size
-SetConfigFlags(FLAG_WINDOW_RESIZABLE)
-init_window(1920, 1080, "Basics")
+SetConfigFlags(FLAG_VSYNC_HINT | FLAG_WINDOW_HIGHDPI)
+init_window(1536, 864, "Basics")
 
 # importing things for game.
 # spaceship_texture = load_texture(join("assets", "spaceship.png"))
@@ -37,8 +37,8 @@ while not window_should_close():
 
     # Display images.
     # draw_texture(spaceship_texture, 0, 0, WHITE)
-    draw_texture_v(new_texture, Vector2(0, 0), WHITE)
-    draw_texture_v(new_texture2, Vector2(800, 600), WHITE)
+    draw_texture_v(new_texture, Vector2(0, 10), WHITE)
+    draw_texture_v(new_texture2, Vector2(1400, 650), WHITE)
 
     end_drawing()
 
