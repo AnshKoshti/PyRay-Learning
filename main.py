@@ -7,6 +7,10 @@ init_window(1536, 864, "Basics")
 
 # importing things for game.
 spaceship_texture = load_texture(join("assets", "spaceship.png"))
+spaceship_image = load_image(join("assets", "spaceship.png"))
+image_color_grayscale(spaceship_image)
+new_texture = load_texture_from_image(spaceship_image)
+
 
 # Starting point of the code.
 while not window_should_close():
@@ -22,6 +26,7 @@ while not window_should_close():
 
     # Display images.
     draw_texture(spaceship_texture, 0, 0, WHITE)
+    draw_texture_v(new_texture, Vector2(100, 0), WHITE)
 
     end_drawing()
 
