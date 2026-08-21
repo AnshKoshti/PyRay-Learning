@@ -7,7 +7,7 @@ from os.path import join
 SetConfigFlags(FLAG_VSYNC_HINT | FLAG_WINDOW_HIGHDPI)
 init_window(1536, 864, "Basics")
 
-# importing things for game.
+# importing textures/images.
 # spaceship_texture = load_texture(join("assets", "spaceship.png"))
 # cowboy_texture = load_texture(join("assets", "animation", "0.png"))
 
@@ -18,6 +18,9 @@ new_texture = load_texture_from_image(spaceship_image)
 cowboy_image = load_image(join("assets", "animation", "0.png"))
 image_color_invert(cowboy_image)
 new_texture2 = load_texture_from_image(cowboy_image)
+
+# importing fonts.
+font = load_font(join("assets", "Zero Hour.otf"))
 
 # Starting point of the code.
 while not window_should_close():
@@ -39,6 +42,10 @@ while not window_should_close():
     # draw_texture(spaceship_texture, 0, 0, WHITE)
     draw_texture_v(new_texture, Vector2(0, 10), WHITE)
     draw_texture_v(new_texture2, Vector2(1400, 650), WHITE)
+
+    # Display text.
+    draw_text("Some text.", 0, 400, 50, WHITE)
+    draw_text_ex(font, "Some more text.", Vector2(0, 600), 100, 0, BLUE)
 
     end_drawing()
 
